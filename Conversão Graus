@@ -1,0 +1,12 @@
+program congraus;
+
+var f, c, calculo: longint;
+
+begin
+
+	read(f);
+	calculo := ((f-32) div 9)*5;
+	c := calculo;
+	writeln(c);
+	
+end.
