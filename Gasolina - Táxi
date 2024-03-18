@@ -1,0 +1,39 @@
+program calcgasolina;
+
+var		kminicio, kmfinal, kmrodado: integer;
+		gasolinausada: integer;
+		valorrecebido: integer;
+		valorgasto: integer;
+		consumo: real;
+		lucro: real;
+		valorgasolina: real;
+		
+begin
+		
+		valorgasolina := 1.90;
+	
+		write('Digite o KM inicial: ');
+			read(kminicio);
+
+		write('Digite o KM no final do dia: ');
+			read(kmfinal);
+		
+				kmrodado := kmfinal - kminicio;
+		
+		write('Digite a quantidade de gasolina usada: ');
+			read(gasolinausada);	
+		
+		write('Digite o valor recebido dos clientes: ');
+			read(valorrecebido);
+		
+				consumo := kmrodado/gasolinausada;
+				lucro := valorrecebido - (gasolinausada * valorgasolina);
+		
+		write('Media de consumo: ', consumo:0:2);
+			writeln;
+		write('Lucro liquido do dia: ', lucro:0:2);
+			writeln;
+		
+end.
+		
+		
