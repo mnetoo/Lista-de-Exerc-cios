@@ -1,0 +1,16 @@
+program calcazulejos;
+
+var		comp, larg, alt, area: real;
+		caixa: integer;
+		
+begin
+
+	read(comp);
+	read(larg);
+	read(alt);
+	area := (alt * larg * 2) + (comp * alt * 2);
+	caixa := round(area/1.5);
+	writeln(caixa);
+	
+end.
+	
