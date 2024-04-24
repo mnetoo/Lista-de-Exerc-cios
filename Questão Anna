@@ -1,0 +1,29 @@
+program questaoamor;
+
+var
+
+    q, i, p, pa, pmin, qmax, tax: longint;
+
+begin
+    
+    i:= 0;
+    q:= 0;
+    pmin:= 5;
+    qmax:= 10000;
+    tax:= 1000;
+
+        while (i < 15) do
+        begin
+
+            readln(p);
+            pa:= p - pmin;
+            q:= qmax - (tax * pa);
+            writeln('Q(p) = ', q);
+            i:= i + 1;
+
+        end;
+
+        if (i = 15) then
+            writeln('Deixou de ser rentável');
+
+end.
